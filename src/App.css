@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+  font: 20px 'Century Gothic', Helvetica, Arial, sans-serif; /*** Letra y fondo ***/
+  letter-spacing: 5px;
+  color: white;
+  font-size: 20px;
+  height: 100%;
+}
+
+.App-logo {
+  height: 12vmin;
+  pointer-events: none;
+
+  filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 1)); /*** Logo ***/
+  margin-left: -350px;
+  margin-top: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: transparent;
+  min-height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  background-image: url("/public/banner.jpg");  /*** Banner ***/
+	background-size: cover;
+	width:100%;
+  height: 12vh;
+}
+.App-header h1 {								                /***** Titulo header *****/
+  font: 20px 'Century Gothic', Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+  position: static;
+  margin-top: -80px;
+  margin-left: 80px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/****************** BODY ******************/
+.App-body #fecha{                        /****** fecha actual *****/
+  color: darkgray;
+  left: 40px;
+  margin-top: -20px;
+  position: absolute;
+}
+.App-body #userPerfil{                   /****** usuario perfil *****/
+  color: darkgray;
+  right: 90px;
+  margin-top: -20px;
+  position: absolute;
+}
+.App-body #fotoPerfil{                        /****** Foto perfil *****/
+  filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 1));
+  width: 30px;
+  right: 30px;
+  margin-top: -22px;
+  position: absolute;
+}
+
+.App-body h1{                           /*** Titulo cocntenido ***/
+  font: 40px 'Century Gothic', Helvetica, Arial, sans-serif;
+  letter-spacing: 5px;
+}
+.App-body div{                            /** Divs **/
+
+}
+.App-body img{                            /** Divs **/
+  width: 40px;
+}
+
+.App-body table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.App-body table th{
+  background-color: #500;
+  text-shadow: 2px 2px #000;
+}
+.App-body table td{
+  min-width: 140px;
+  height: 40px;
+}
+.App-body table tr:nth-child(even){background-color: rgba(25,25,25,0.8);}
+.App-body table tr:nth-child(odd){background-color: rgba(25,12,0,0.8);}
+
+input[type=text]{
+  color: #500;
+  padding: 20px 0 20px 0;
+  letter-spacing: 3px;
+  font-size: medium;
+  width: 150px;
+  margin: 10px;
+}
+
+input[type=number]{
+  color: #500;
+  padding: 17px 0 17px 17px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: large;
+  width: 124px;
+  background-color: #ffe!important;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  opacity: 1;
+  color: #500!important;
+  height: 70px;
+  cursor: pointer;
+  padding: 0 12px 0 12px;
+  background-color: #500!important;
+}
+
+input[type=submit]{
+  color: white;
+  background-color: #500;
+  padding: 15px 0 15px 0;
+  border-radius: 30px;
+  letter-spacing: 3px;
+  font-size: medium;
+  width: 200px;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 1));
+}
+
+#valorTotal{                      /*Valor total a pagar*/
+  font: 30px 'Century Gothic', Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  width: 400px;
+  height: 16px;
+  font-size: 40px;
+  border-radius: 30px;
+  text-shadow: 2px 2px #aaa;
+  background-color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#valoresTotales{                /*Valores totales de la simulación*/
+  background-color: #500;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  font-size: 25px;
+}
+
