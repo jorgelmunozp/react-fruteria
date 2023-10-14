@@ -139,7 +139,7 @@ class App extends React.Component {
                       <td><p>{formatterPeso.format(this.state.totalManzanas)}</p></td>       
                   </tr>
                   <tr>
-                      <td><img id="fruta" src="../images/banano.png" /></td>
+                      <td><img id="fruta" src="images/banano.png" /></td>
                       <td><p>{frutas.bananos.nombre}</p></td>
                       <td><p>{formatterPeso.format(frutas.bananos.precio)}</p></td>
                       <td><input id="Bananos" type="number" onChange={this.handleChangeCantidadBananos}
@@ -151,7 +151,7 @@ class App extends React.Component {
                       <td><p>{formatterPeso.format(this.state.totalBananos)}</p></td>
                   </tr>
                   <tr>
-                      <td><img id="fruta" src="./images/mango.png" /></td>
+                      <td><img id="fruta" src="images/mango.png" /></td>
                       <td><p>{frutas.mangos.nombre}</p></td>
                       <td><p>{formatterPeso.format(frutas.mangos.precio)}</p></td>
                       <td><input id="Mangos" type="number" onChange={this.handleChangeCantidadMangos}
@@ -163,7 +163,7 @@ class App extends React.Component {
                       <td><p>{formatterPeso.format(this.state.totalMangos)}</p></td>          
                   </tr>
                   <tr>
-                      <td><img id="fruta" src="../../fresa.png" /></td>
+                      <td><img id="fruta" src="images/fresa.png" /></td>
                       <td><p>{frutas.fresas.nombre}</p></td>
                       <td><p>{formatterPeso.format(frutas.fresas.precio)}</p></td>
                       <td><input id="Fresas" type="number" onChange={this.handleChangeCantidadFresas}
