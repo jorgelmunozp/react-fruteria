@@ -100,7 +100,7 @@ class App extends React.Component {
             <p id="userPerfil">hola {user}</p>
             <img id="fotoPerfil" src="profile.png" alt=''/>
             <h1>
-              Simulador
+              Facturación
             </h1>
           </div>
           <div>

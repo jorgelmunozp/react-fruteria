@@ -1,5 +1,6 @@
 {
-  "name": "fruteriasimuladorapp",
+  "name": "react-fruteria",
+  "homepage": "https://jorgelmunozp.github.io/react-fruteria-facturacion/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
