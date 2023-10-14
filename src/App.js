@@ -105,81 +105,83 @@ class App extends React.Component {
           </div>
           <div>
               <table border="3">
-                <tr>
-                    <th colSpan={3}>Total a pagar</th>
-                    <th colSpan={3}><input id="valorTotal" value={formatterPeso.format(this.state.totalAPagar)} 
-                                          type="text" name="totalCompra" placeholder=" Total a pagar" autoComplete="off" disabled="disabled" /></th>
-                    <th colSpan={2}><form onSubmit={this.handleSubmit}>
-                                      <input type="submit" value="Reiniciar" name="botones" id="cancelar" />
-                                      </form></th>             
-                </tr>
-                <tr>
-                    <th colSpan={2} rowSpan={2}>Fruta</th>
-                    <th rowSpan={2}>Precio</th>
-                    <th rowSpan={2}>Kilos</th>
-                    <th rowSpan={2}>Subtotal</th>
-                    <th colSpan={2}>Descuento</th>
-                    <th rowSpan={2}>Total</th>
-                </tr>
-                <tr>
-                    <th>Porcentaje</th>
-                    <th>Valor</th>
-                </tr>
-                <tr>
-                    <td><img id="fruta" src="/images/manzana.png" /></td>
-                    <td><p>{frutas.manzanas.nombre}</p></td>
-                    <td><p>{formatterPeso.format(frutas.manzanas.precio)}</p></td>
-                    <td><input id="cantidadManzanas" type="number" onChange={this.handleChangeCantidadManzanas} 
-                              value={this.state.cantidadManzanas} autoComplete='off' min={0} /></td>
-                    <td><p>{formatterPeso.format(this.state.subtotalManzanas)}</p></td>
-                    <td><input id="descuentoManzanas" type="number" onChange={this.handleChangeDescuentoManzanas} 
-                              value={this.state.descuentoManzanas} autoComplete='off' min={0} max={100} /></td>
-                    <td><p>{formatterPeso.format(this.state.valordescuentoManzanas)}</p></td>
-                    <td><p>{formatterPeso.format(this.state.totalManzanas)}</p></td>       
-                </tr>
-                <tr>
-                    <td><img id="fruta" src="/images/banano.png" /></td>
-                    <td><p>{frutas.bananos.nombre}</p></td>
-                    <td><p>{formatterPeso.format(frutas.bananos.precio)}</p></td>
-                    <td><input id="Bananos" type="number" onChange={this.handleChangeCantidadBananos}
-                              value={this.state.cantidadBananos} autoComplete='off' min={0}/></td>
-                    <td><p>{formatterPeso.format(this.state.subtotalBananos)}</p></td>
-                    <td><input id="descuentoBananos" type="number" onChange={this.handleChangeDescuentoBananos} 
-                              value={this.state.descuentoBananos} autoComplete='off' min={0} max={100} /></td>
-                    <td><p>{formatterPeso.format(this.state.valordescuentoBananos)}</p></td>
-                    <td><p>{formatterPeso.format(this.state.totalBananos)}</p></td>
-                </tr>
-                <tr>
-                    <td><img id="fruta" src="/images/mango.png" /></td>
-                    <td><p>{frutas.mangos.nombre}</p></td>
-                    <td><p>{formatterPeso.format(frutas.mangos.precio)}</p></td>
-                    <td><input id="Mangos" type="number" onChange={this.handleChangeCantidadMangos}
-                              value={this.state.cantidadMangos} autoComplete='off' min={0}/></td>
-                    <td><p>{formatterPeso.format(this.state.subtotalMangos)}</p></td>
-                    <td><input id="descuentoMangos" type="number" onChange={this.handleChangeDescuentoMangos} 
-                              value={this.state.descuentoMangos} autoComplete='off' min={0} max={100} /></td>
-                    <td><p>{formatterPeso.format(this.state.valordescuentoMangos)}</p></td>
-                    <td><p>{formatterPeso.format(this.state.totalMangos)}</p></td>          
-                </tr>
-                <tr>
-                    <td><img id="fruta" src="/images/fresa.png" /></td>
-                    <td><p>{frutas.fresas.nombre}</p></td>
-                    <td><p>{formatterPeso.format(frutas.fresas.precio)}</p></td>
-                    <td><input id="Fresas" type="number" onChange={this.handleChangeCantidadFresas}
-                              value={this.state.cantidadFresas} autoComplete='off' min={0} /></td>
-                    <td><p>{formatterPeso.format(this.state.subtotalFresas)}</p></td>
-                    <td><input id="descuentoFresas" type="number" onChange={this.handleChangeDescuentoFresas} 
-                              value={this.state.descuentoFresas} autoComplete='off' min={0} max={100} /></td>
-                    <td><p>{formatterPeso.format(this.state.valordescuentoFresas)}</p></td>
-                    <td><p>{formatterPeso.format(this.state.totalFresas)}</p></td>          
-                </tr>
-                <tr id="valoresTotales">
-                    <td colSpan={3}>Totales</td>
-                    <td>{this.state.cantidadTotal}</td>
-                    <td>{formatterPeso.format(this.state.subtotalTotal)}</td>
-                    <td colSpan={2}>{formatterPeso.format(this.state.valordescuentoTotal)}</td>
-                    <td>{formatterPeso.format(this.state.totalAPagar)}</td>
-                </tr>
+                <tbody>
+                  <tr>
+                      <th colSpan={3}>Total a pagar</th>
+                      <th colSpan={3}><input id="valorTotal" value={formatterPeso.format(this.state.totalAPagar)} 
+                                            type="text" name="totalCompra" placeholder=" Total a pagar" autoComplete="off" disabled="disabled" /></th>
+                      <th colSpan={2}><form onSubmit={this.handleSubmit}>
+                                        <input type="submit" value="Reiniciar" name="botones" id="cancelar" />
+                                        </form></th>             
+                  </tr>
+                  <tr>
+                      <th colSpan={2} rowSpan={2}>Fruta</th>
+                      <th rowSpan={2}>Precio</th>
+                      <th rowSpan={2}>Kilos</th>
+                      <th rowSpan={2}>Subtotal</th>
+                      <th colSpan={2}>Descuento</th>
+                      <th rowSpan={2}>Total</th>
+                  </tr>
+                  <tr>
+                      <th>Porcentaje</th>
+                      <th>Valor</th>
+                  </tr>
+                  <tr>
+                      <td><img id="fruta" src=".../images/manzana.png" /></td>
+                      <td><p>{frutas.manzanas.nombre}</p></td>
+                      <td><p>{formatterPeso.format(frutas.manzanas.precio)}</p></td>
+                      <td><input id="cantidadManzanas" type="number" onChange={this.handleChangeCantidadManzanas} 
+                                value={this.state.cantidadManzanas} autoComplete='off' min={0} /></td>
+                      <td><p>{formatterPeso.format(this.state.subtotalManzanas)}</p></td>
+                      <td><input id="descuentoManzanas" type="number" onChange={this.handleChangeDescuentoManzanas} 
+                                value={this.state.descuentoManzanas} autoComplete='off' min={0} max={100} /></td>
+                      <td><p>{formatterPeso.format(this.state.valordescuentoManzanas)}</p></td>
+                      <td><p>{formatterPeso.format(this.state.totalManzanas)}</p></td>       
+                  </tr>
+                  <tr>
+                      <td><img id="fruta" src="/images/banano.png" /></td>
+                      <td><p>{frutas.bananos.nombre}</p></td>
+                      <td><p>{formatterPeso.format(frutas.bananos.precio)}</p></td>
+                      <td><input id="Bananos" type="number" onChange={this.handleChangeCantidadBananos}
+                                value={this.state.cantidadBananos} autoComplete='off' min={0}/></td>
+                      <td><p>{formatterPeso.format(this.state.subtotalBananos)}</p></td>
+                      <td><input id="descuentoBananos" type="number" onChange={this.handleChangeDescuentoBananos} 
+                                value={this.state.descuentoBananos} autoComplete='off' min={0} max={100} /></td>
+                      <td><p>{formatterPeso.format(this.state.valordescuentoBananos)}</p></td>
+                      <td><p>{formatterPeso.format(this.state.totalBananos)}</p></td>
+                  </tr>
+                  <tr>
+                      <td><img id="fruta" src="/images/mango.png" /></td>
+                      <td><p>{frutas.mangos.nombre}</p></td>
+                      <td><p>{formatterPeso.format(frutas.mangos.precio)}</p></td>
+                      <td><input id="Mangos" type="number" onChange={this.handleChangeCantidadMangos}
+                                value={this.state.cantidadMangos} autoComplete='off' min={0}/></td>
+                      <td><p>{formatterPeso.format(this.state.subtotalMangos)}</p></td>
+                      <td><input id="descuentoMangos" type="number" onChange={this.handleChangeDescuentoMangos} 
+                                value={this.state.descuentoMangos} autoComplete='off' min={0} max={100} /></td>
+                      <td><p>{formatterPeso.format(this.state.valordescuentoMangos)}</p></td>
+                      <td><p>{formatterPeso.format(this.state.totalMangos)}</p></td>          
+                  </tr>
+                  <tr>
+                      <td><img id="fruta" src="/images/fresa.png" /></td>
+                      <td><p>{frutas.fresas.nombre}</p></td>
+                      <td><p>{formatterPeso.format(frutas.fresas.precio)}</p></td>
+                      <td><input id="Fresas" type="number" onChange={this.handleChangeCantidadFresas}
+                                value={this.state.cantidadFresas} autoComplete='off' min={0} /></td>
+                      <td><p>{formatterPeso.format(this.state.subtotalFresas)}</p></td>
+                      <td><input id="descuentoFresas" type="number" onChange={this.handleChangeDescuentoFresas} 
+                                value={this.state.descuentoFresas} autoComplete='off' min={0} max={100} /></td>
+                      <td><p>{formatterPeso.format(this.state.valordescuentoFresas)}</p></td>
+                      <td><p>{formatterPeso.format(this.state.totalFresas)}</p></td>          
+                  </tr>
+                  <tr id="valoresTotales">
+                      <td colSpan={3}>Totales</td>
+                      <td>{this.state.cantidadTotal}</td>
+                      <td>{formatterPeso.format(this.state.subtotalTotal)}</td>
+                      <td colSpan={2}>{formatterPeso.format(this.state.valordescuentoTotal)}</td>
+                      <td>{formatterPeso.format(this.state.totalAPagar)}</td>
+                  </tr>
+                </tbody>
               </table>
           </div>
         </body>
