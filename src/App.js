@@ -91,7 +91,7 @@ class App extends React.Component {
         <header className="App-header">
           <a href="/">
               <img src={logo} className="App-logo" alt="logo" />
-              <h1>Frutería Toto</h1>
+              <h1>Frutería Store</h1>
           </a>
         </header> 
         <body className="App-body">
