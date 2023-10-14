@@ -1,4 +1,4 @@
-<h1 align="center"> Fruteria | React App </h1>
+<h1 align="center"> Fruteria Store | React App </h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-f1e05a">
@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/status-close-ff3333">
 </p>
 
-* Demo: [Frutería](https://jorgelmunozp.github.io/react-fruteria-facturacion/)
+* Demo: [Frutería Store](https://jorgelmunozp.github.io/react-fruteria-facturacion/)
 
 ***
 
