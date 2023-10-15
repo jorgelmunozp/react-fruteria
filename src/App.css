@@ -6,6 +6,11 @@
   --text-shadow-black: 2px 2px 2px rgba(0, 0, 0, 0.7);
   --text-shadow-gray: 2px 2px 2px rgba(170, 170, 170, 0.7);
   --drop-shadow-black: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+
+  --fruit-1-name: "anzana";
+  --fruit-2-name: "anano";
+  --fruit-3-name: "ango";
+  --fruit-4-name: "resa";
 }
 
 .App {
@@ -92,6 +97,7 @@ a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  
 }
 .App-body table th{
   background-color: var(--red-wine-color);
@@ -112,6 +118,15 @@ input[type=text]{
   width: 150px;
   margin: 10px;
 }
+
+.nameFruit1 { display: inline-flex; align-items: center; }         /* Nombres de las frutas*/
+.nameFruit2 { display: inline-flex; align-items: center; } 
+.nameFruit3 { display: inline-flex; align-items: center; } 
+.nameFruit4 { display: inline-flex; align-items: center; } 
+.nameFruit1::after { content: var(--fruit-1-name); }         /* Nombres de las frutas*/
+.nameFruit2::after { content: var(--fruit-2-name); } 
+.nameFruit3::after { content: var(--fruit-3-name); } 
+.nameFruit4::after { content: var(--fruit-4-name); } 
 
 input[type=number]{
   color: var(--red-wine-color);
@@ -315,6 +330,11 @@ input[type=submit]{
     min-width: 30px;
     height: 50px;
   }
+
+  .nameFruit1::after {  content: ""; }                  /* Nombres de las frutas*/
+  .nameFruit2::after {  content: ""; }                  /* Nombres de las frutas*/
+  .nameFruit3::after {  content: ""; }                  /* Nombres de las frutas*/
+  .nameFruit4::after {  content: ""; }                  /* Nombres de las frutas*/
 
   input[type=text]{
     padding: 10px 0 10px 0;

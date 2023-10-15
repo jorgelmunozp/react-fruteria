@@ -135,7 +135,7 @@ class App extends React.Component {
                   </tr>
                   <tr>
                       <td><img id="fruta" src="images/manzana.png" /></td>
-                      <td><p>{frutas.manzanas.nombre}</p></td>
+                      <td className='nameFruit1'><p>M</p></td>
                       <td><p>{formatterPeso.format(frutas.manzanas.precio)}</p></td>
                       <td><input id="cantidadManzanas" type="number" onChange={this.handleChangeCantidadManzanas} 
                                 value={this.state.cantidadManzanas} autoComplete='off' min={0} /></td>
@@ -147,7 +147,7 @@ class App extends React.Component {
                   </tr>
                   <tr>
                       <td><img id="fruta" src="images/banano.png" /></td>
-                      <td><p>{frutas.bananos.nombre}</p></td>
+                      <td className='nameFruit2'><p>B</p></td>
                       <td><p>{formatterPeso.format(frutas.bananos.precio)}</p></td>
                       <td><input id="Bananos" type="number" onChange={this.handleChangeCantidadBananos}
                                 value={this.state.cantidadBananos} autoComplete='off' min={0}/></td>
@@ -159,7 +159,7 @@ class App extends React.Component {
                   </tr>
                   <tr>
                       <td><img id="fruta" src="images/mango.png" /></td>
-                      <td><p>{frutas.mangos.nombre}</p></td>
+                      <td className='nameFruit3'><p>M</p></td>
                       <td><p>{formatterPeso.format(frutas.mangos.precio)}</p></td>
                       <td><input id="Mangos" type="number" onChange={this.handleChangeCantidadMangos}
                                 value={this.state.cantidadMangos} autoComplete='off' min={0}/></td>
@@ -171,7 +171,7 @@ class App extends React.Component {
                   </tr>
                   <tr>
                       <td><img id="fruta" src="images/fresa.png" /></td>
-                      <td><p>{frutas.fresas.nombre}</p></td>
+                      <td className='nameFruit4'><p>F</p></td>
                       <td><p>{formatterPeso.format(frutas.fresas.precio)}</p></td>
                       <td><input id="Fresas" type="number" onChange={this.handleChangeCantidadFresas}
                                 value={this.state.cantidadFresas} autoComplete='off' min={0} /></td>
