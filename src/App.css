@@ -175,7 +175,7 @@ input[type=submit]{
 
 
 /*********************************** MOVIL ***********************************/
-/************* TABLETS *************/
+/************************** TABLETS **************************/
 @media screen and (max-width: 1000px) {
   :root {
     --text-shadow-black: 1px 1px 1px rgba(0, 0, 0, 0.7);
@@ -265,7 +265,7 @@ input[type=submit]{
 
 }
 
-/************* CELLPHONES *************/
+/************************** CELLPHONES **************************/
 @media screen and (max-width: 640px) {
   :root {
     --text-shadow-black: 1px 1px 1px rgba(0, 0, 0, 0.7);
@@ -324,7 +324,7 @@ input[type=submit]{
     width: 20px;
   }
   .App-body table td{
-    min-width: 40px;
+    min-width: 30px;
     height: 50px;
   }
 
