@@ -252,7 +252,7 @@ input[type=submit]{
     margin: 12px;
   }
   input[type=number]{
-    padding: 10px 0 10px 5px;
+    padding: 10px 0 10px 2px;
     letter-spacing: 0px;
     font-size: 10px;
     width: 40px;
@@ -269,7 +269,7 @@ input[type=submit]{
     letter-spacing: 0px;
     font-size: 10px;
     font-weight: bold;
-    width: 80px;
+    width: 70px;
   }
 
   #valorTotal{                      /*Valor total a pagar*/
