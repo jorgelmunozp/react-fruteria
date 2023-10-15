@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-fruteria-facturacion/static/css/main.8bdc9b05.css",
+    "main.css": "/react-fruteria-facturacion/static/css/main.738665db.css",
     "main.js": "/react-fruteria-facturacion/static/js/main.43a67955.js",
     "static/js/787.05fb662d.chunk.js": "/react-fruteria-facturacion/static/js/787.05fb662d.chunk.js",
     "static/media/banner.jpg": "/react-fruteria-facturacion/static/media/banner.18ab8e97b959db4cd27b.jpg",
     "static/media/fondo.jpg": "/react-fruteria-facturacion/static/media/fondo.c30a41d802d8ef1440bf.jpg",
     "static/media/logo.png": "/react-fruteria-facturacion/static/media/logo.719ae56994c3b37bac2b.png",
     "index.html": "/react-fruteria-facturacion/index.html",
-    "main.8bdc9b05.css.map": "/react-fruteria-facturacion/static/css/main.8bdc9b05.css.map",
+    "main.738665db.css.map": "/react-fruteria-facturacion/static/css/main.738665db.css.map",
     "main.43a67955.js.map": "/react-fruteria-facturacion/static/js/main.43a67955.js.map",
     "787.05fb662d.chunk.js.map": "/react-fruteria-facturacion/static/js/787.05fb662d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bdc9b05.css",
+    "static/css/main.738665db.css",
     "static/js/main.43a67955.js"
   ]
 }
