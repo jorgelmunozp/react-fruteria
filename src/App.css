@@ -194,9 +194,9 @@ input[type=submit]{
     height: 10vh;
   }
   .App-logo {
-    height: 8vmin;
+    height: 10vmin;
     margin-left: -280px;
-    margin-top: 40px;
+    margin-top: 50px;
   }
   .App-header h1 {								                /***** Titulo header *****/
     letter-spacing: 1px;
@@ -308,7 +308,7 @@ input[type=submit]{
   }
   .App-body #fotoPerfil{                   /****** Foto perfil *****/
     width: 20px;
-    margin-top: -23px;
+    margin-top: -24px;
     right: 10px;
   }
   
