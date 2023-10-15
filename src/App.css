@@ -189,18 +189,18 @@ input[type=submit]{
   
   /************* HEADER *************/
   .App-header {
-    min-height: 20vh;
+    min-height: 22vh;
     font-size: calc(14px + 2vmin);
-    height: 20vh;
+    height: 22vh;
   }
   .App-logo {
-    height: 14vmin;
+    height: 18vmin;
     margin-left: -280px;
     margin-top: 50px;
   }
   .App-header h1 {								                /***** Titulo header *****/
     letter-spacing: 1px;
-    font-size: 40px;
+    font-size: 36px;
     margin-top: -60px;
     margin-left: 100px;
   }
@@ -211,7 +211,7 @@ input[type=submit]{
   }
   .App-body #fotoPerfil{                   /****** Foto perfil *****/
     width: 18px;
-    margin-top: -22px;
+    margin-top: -23px;
   }
 
   .App-body h1{                           /*** Titulo cocntenido ***/
