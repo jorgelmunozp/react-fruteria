@@ -142,7 +142,7 @@ class App extends React.Component {
                       <th>Valor</th>
                   </tr>
                   <tr>
-                      <td><img id="fruta" src="images/manzana.png" /></td>
+                      <td><img id="fruta1" src="images/manzana.png" /></td>
                       <td className='nameFruit1'><p>M</p></td>
                       <td><p>{formatterPeso.format(frutas.manzanas.precio)}</p></td>
                       <td><input id="cantidadManzanas" type="number" onChange={this.handleChangeCantidadManzanas} 
@@ -154,7 +154,7 @@ class App extends React.Component {
                       <td><p>{formatterPeso.format(this.state.totalManzanas)}</p></td>       
                   </tr>
                   <tr>
-                      <td><img id="fruta" src="images/banano.png" /></td>
+                      <td><img id="fruta2" src="images/banano.png" /></td>
                       <td className='nameFruit2'><p>B</p></td>
                       <td><p>{formatterPeso.format(frutas.bananos.precio)}</p></td>
                       <td><input id="Bananos" type="number" onChange={this.handleChangeCantidadBananos}
@@ -166,7 +166,7 @@ class App extends React.Component {
                       <td><p>{formatterPeso.format(this.state.totalBananos)}</p></td>
                   </tr>
                   <tr>
-                      <td><img id="fruta" src="images/mango.png" /></td>
+                      <td><img id="fruta3" src="images/mango.png" /></td>
                       <td className='nameFruit3'><p>M</p></td>
                       <td><p>{formatterPeso.format(frutas.mangos.precio)}</p></td>
                       <td><input id="Mangos" type="number" onChange={this.handleChangeCantidadMangos}
@@ -178,7 +178,7 @@ class App extends React.Component {
                       <td><p>{formatterPeso.format(this.state.totalMangos)}</p></td>          
                   </tr>
                   <tr>
-                      <td><img id="fruta" src="images/fresa.png" /></td>
+                      <td><img id="fruta4" src="images/fresa.png" /></td>
                       <td className='nameFruit4'><p>F</p></td>
                       <td><p>{formatterPeso.format(frutas.fresas.precio)}</p></td>
                       <td><input id="Fresas" type="number" onChange={this.handleChangeCantidadFresas}
