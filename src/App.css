@@ -95,7 +95,6 @@ a {
   align-items: center;
 }
 .App-body table td{
-  height: 40px;
   align-items: center;
 }
 .App-body table tr:nth-child(even){ background-color: rgba(25,25,25,0.8); }
@@ -110,7 +109,7 @@ input[type=text]{
   margin: 10px;
 }
 
-.nameFruit1 { display: inline-flex; align-items: center; width: 98%; text-align: center; }         /* Nombres de las frutas*/
+.nameFruit1 { display: inline-flex; align-items: center; width: 98%; }         /* Nombres de las frutas*/
 .nameFruit2 { display: inline-flex; align-items: center; width: 98%; } 
 .nameFruit3 { display: inline-flex; align-items: center; width: 98%; } 
 .nameFruit4 { display: inline-flex; align-items: center; width: 98%; } 
