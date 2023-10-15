@@ -95,7 +95,7 @@ class App extends React.Component {
           </a>
         </header> 
         <body className="App-body">
-          <div>
+          <div className='infoPerfil'>
             <p id="fecha">Fecha {fecha.toLocaleDateString()}</p>
             <p id="userPerfil">hola {user}</p>
             <img id="fotoPerfil" src="profile.png" alt=''/>
