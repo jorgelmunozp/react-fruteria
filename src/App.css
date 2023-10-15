@@ -172,7 +172,7 @@ input[type=submit]{
 
 /*********************************** MOVIL ***********************************/
 /************************** TABLETS **************************/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   :root {
     --text-shadow-black: 1px 1px 1px rgba(0, 0, 0, 0.7);
     --text-shadow-gray: 1px 1px 1px rgba(170, 170, 170, 0.7);
@@ -185,12 +185,12 @@ input[type=submit]{
   
   /************* HEADER *************/
   .App-header {
-    min-height: 22vh;
+    min-height: 8vh;
     font-size: calc(14px + 2vmin);
-    height: 22vh;
+    height: 8vh;
   }
   .App-logo {
-    height: 18vmin;
+    height: 8vmin;
   }
   .App-title {								                /***** Titulo header *****/
     letter-spacing: 1px;
