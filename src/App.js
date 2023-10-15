@@ -89,10 +89,17 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <a href="/">
-              <img src={logo} className="App-logo" alt="logo" />
-              <h1>Frutería Store</h1>
-          </a>
+          <div>
+            <table>
+              <tbody>
+                <tr>
+                  <td><a href="/"><img src={logo} className="App-logo" alt="logo" /></a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="/"><h1 className="App-title">Frutería Store</h1></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </header> 
         <body className="App-body">
           <div className='infoPerfil'>
