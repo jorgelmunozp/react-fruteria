@@ -189,9 +189,9 @@ input[type=submit]{
   
   /************* HEADER *************/
   .App-header {
-    min-height: 10vh;
+    min-height: 11vh;
     font-size: calc(14px + 2vmin);
-    height: 10vh;
+    height: 11vh;
   }
   .App-logo {
     height: 10vmin;
@@ -208,6 +208,10 @@ input[type=submit]{
   /************* BODY *************/
   .App-body .infoPerfil{
     margin-top: 35px;
+  }
+  .App-body #fotoPerfil{                   /****** Foto perfil *****/
+    width: 18px;
+    margin-top: -24px;
   }
 
   .App-body h1{                           /*** Titulo cocntenido ***/
@@ -307,7 +311,7 @@ input[type=submit]{
     margin-top: -20px;
   }
   .App-body #fotoPerfil{                   /****** Foto perfil *****/
-    width: 20px;
+    width: 18px;
     margin-top: -24px;
     right: 10px;
   }
