@@ -6,6 +6,7 @@
   --text-shadow-black: 2px 2px 2px rgba(0, 0, 0, 0.7);
   --text-shadow-gray: 2px 2px 2px rgba(170, 170, 170, 0.7);
   --drop-shadow-black: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
+  --drop-shadow-white: drop-shadow(2px 2px 2px rgba(255, 255, 255, 1));
 
   --fruit-1-name: "anzana";
   --fruit-2-name: "anano";
@@ -47,9 +48,9 @@ a {
 .App-logo {
   height: calc(40px + 2vmin);
   pointer-events: none;
-  filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 1)); /*** Logo ***/
+  filter: var(--drop-shadow-white);             /*** Logo ***/
 }
-.App-title {								                /***** Titulo header *****/
+.App-title {								                    /***** Titulo header *****/
   font: 20px 'Century Gothic', Arial, sans-serif;
   letter-spacing: 2px;
   font-size: calc(20px + 2vmin);
@@ -74,12 +75,13 @@ a {
   color: var(--lightgray-color);
 }
 .App-info #fotoPerfil{                        /****** Foto perfil *****/
-  filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 1));
+  filter: var(--drop-shadow-white);
   width: 30px;
 }
 
-.App-body img{                            /** Divs **/
+.App-body img{                                /** Divs **/
   width: 40px;
+  filter: var(--drop-shadow-white);
 }
 .App-body table{
   text-align: center;
@@ -90,10 +92,13 @@ a {
 .App-body table th{
   background-color: var(--red-wine-color);
   text-shadow: var(--text-shadow-black);
+  align-items: center;
 }
 .App-body table td{
-  min-width: 140px;
   height: 40px;
+  align-items: center;
+  width: 100%;
+
 }
 .App-body table tr:nth-child(even){ background-color: rgba(25,25,25,0.8); }
 .App-body table tr:nth-child(odd){ background-color: rgba(25,12,0,0.8); }
@@ -107,11 +112,11 @@ input[type=text]{
   margin: 10px;
 }
 
-.nameFruit1 { display: inline-flex; align-items: center; }         /* Nombres de las frutas*/
-.nameFruit2 { display: inline-flex; align-items: center; } 
-.nameFruit3 { display: inline-flex; align-items: center; } 
-.nameFruit4 { display: inline-flex; align-items: center; } 
-.nameFruit1::after { content: var(--fruit-1-name); }         /* Nombres de las frutas*/
+.nameFruit1 { display: inline-flex; align-items: center; width: 98%; text-align: center; }         /* Nombres de las frutas*/
+.nameFruit2 { display: inline-flex; align-items: center; width: 98%; } 
+.nameFruit3 { display: inline-flex; align-items: center; width: 98%; } 
+.nameFruit4 { display: inline-flex; align-items: center; width: 98%; } 
+.nameFruit1::after { content: var(--fruit-1-name); }              /* Nombres de las frutas*/
 .nameFruit2::after { content: var(--fruit-2-name); } 
 .nameFruit3::after { content: var(--fruit-3-name); } 
 .nameFruit4::after { content: var(--fruit-4-name); } 
@@ -180,6 +185,7 @@ input[type=submit]{
     --text-shadow-black: 1px 1px 1px rgba(0, 0, 0, 0.7);
     --text-shadow-gray: 1px 1px 1px rgba(170, 170, 170, 0.7);
     --drop-shadow-black: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+    --drop-shadow-white: drop-shadow(1px 1px 1px rgba(255, 255, 255, 1));
   }
   .App {
     letter-spacing: 1px;
@@ -216,7 +222,6 @@ input[type=submit]{
     width: 30px;
   }
   .App-body table td{
-    min-width: 80px;
     height: 60px;
   }
 
@@ -265,6 +270,7 @@ input[type=submit]{
     --text-shadow-black: 1px 1px 1px rgba(0, 0, 0, 0.7);
     --text-shadow-gray: 1px 1px 1px rgba(170, 170, 170, 0.7);
     --drop-shadow-black: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+    --drop-shadow-white: drop-shadow(1px 1px 1px rgba(255, 255, 255, 1));
   }
   .App {
     letter-spacing: 0px;
@@ -306,14 +312,13 @@ input[type=submit]{
     width: 20px;
   }
   .App-body table td{
-    min-width: 30px;
     height: 50px;
   }
 
-  .nameFruit1::after {  content: ""; }                  /* Nombres de las frutas*/
-  .nameFruit2::after {  content: ""; }                  /* Nombres de las frutas*/
-  .nameFruit3::after {  content: ""; }                  /* Nombres de las frutas*/
-  .nameFruit4::after {  content: ""; }                  /* Nombres de las frutas*/
+  .nameFruit1::after {  content: ""; padding: 0 2px 0 2px; }         /* Nombre de la fruta1 */
+  .nameFruit2::after {  content: ""; padding: 0 2px 0 2px; }         /* Nombre de la fruta2 */
+  .nameFruit3::after {  content: ""; padding: 0 2px 0 2px; }         /* Nombre de la fruta3 */
+  .nameFruit4::after {  content: ""; padding: 0 2px 0 2px; }         /* Nombre de la fruta4 */
 
   input[type=text]{
     padding: 10px 0 10px 0;
