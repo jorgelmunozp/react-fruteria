@@ -108,8 +108,12 @@ class App extends React.Component {
                 <tr>
                   <td><p id="fecha">Fecha {fecha.toLocaleDateString()}</p></td>
                   <td><h1>Facturación</h1></td>
-                  <td><p id="userPerfil">hola {user}</p>
-                      <img id="fotoPerfil" src="profile.png" alt=''/></td>
+                  <td>
+                    <p id="userPerfil">
+                        hola {user}
+                        <img id="fotoPerfil" src="profile.png" alt=''/>
+                    </p>
+                  </td>
                 </tr>
               </tbody>
             </table>
