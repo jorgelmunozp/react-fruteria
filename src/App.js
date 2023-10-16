@@ -3,7 +3,7 @@ import './App.css';
 
 import React from 'react';
 
-let user = 'jlmunoz';
+let user = 'user';
 let fecha = new Date();                     //Lee la fecha actual del sistema
 
 let frutas = {  "manzanas": {
@@ -111,7 +111,7 @@ class App extends React.Component {
                   <td>
                     <p id="userPerfil">
                         hola {user}
-                        <img id="fotoPerfil" src="profile.png" alt=''/>
+                        <img id="fotoPerfil" src="profile.png" alt=' '/>
                     </p>
                   </td>
                 </tr>

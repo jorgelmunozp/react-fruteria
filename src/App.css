@@ -29,7 +29,9 @@ a {
   color: lightgray;
   text-decoration: none;
 }
-
+p {
+  align-items: center;
+}
 /********************************* HEADER *********************************/
 .App-header {
   background-color: transparent;
@@ -96,6 +98,7 @@ a {
 }
 .App-body table td{
   align-items: center;
+  vertical-align: middle;
 }
 .App-body table tr:nth-child(even){ background-color: rgba(25,25,25,0.8); }
 .App-body table tr:nth-child(odd){ background-color: rgba(25,12,0,0.8); }
