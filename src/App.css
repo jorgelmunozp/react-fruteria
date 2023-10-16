@@ -12,6 +12,9 @@
   --fruit-2-name: "anano";
   --fruit-3-name: "ango";
   --fruit-4-name: "resa";
+
+  background: url("/public/fondo.jpg") no-repeat;
+  background-size: cover;
 }
 
 .App {
@@ -21,17 +24,13 @@
   color: var(--white-color);
   font-size: 20px;
   height: 100%;
-  background: url("/public/fondo.jpg") no-repeat;
-  background-size: cover;
 }
 
 a {
   color: lightgray;
   text-decoration: none;
 }
-p {
-  align-items: center;
-}
+
 /********************************* HEADER *********************************/
 .App-header {
   background-color: transparent;
@@ -73,12 +72,12 @@ p {
   letter-spacing: 5px;
   font-size: calc(16px + 2vmin);
 }
-.App-info #userPerfil{                        /****** usuario perfil *****/
+.App-info #usernameProfile{                        /****** usuario perfil *****/
   color: var(--lightgray-color);
 }
-.App-info #fotoPerfil{                        /****** Foto perfil *****/
+.App-info #avatarProfile{                        /****** Foto perfil *****/
   filter: var(--drop-shadow-white);
-  width: 30px;
+  width: 20px;
 }
 
 .App-body img{                                /** Divs **/
@@ -179,6 +178,16 @@ input[type=submit]{
 
 
 /***************************************** MOVIL *****************************************/
+@media (orientation: landscape) {
+  :root {
+    background-size: cover;
+  }
+}
+@media (orientation: portrait) {
+  :root {
+    background-size: auto;
+  }
+}
 /******************************** TABLETS ********************************/
 @media screen and (max-width: 1200px) {
   :root {
@@ -214,8 +223,8 @@ input[type=submit]{
     letter-spacing: 1px;
     font-size: calc(14px + 2vmin);
   }
-  .App-info #fotoPerfil{                   /****** Foto perfil *****/
-    width: 18px;
+  .App-info #avatarProfile{                   /****** Foto perfil *****/
+    width: 16px;
   }
 
   .App-body img{                            /** Divs **/
@@ -302,10 +311,10 @@ input[type=submit]{
     letter-spacing: 0px;
     font-size: calc(10px + 2vmin);
   }
-  .App-info #userPerfil{                   /****** usuario perfil *****/
+  .App-info #usernameProfile{                   /****** usuario perfil *****/
   }
-  .App-info #fotoPerfil{                   /****** Foto perfil *****/
-    width: 18px;
+  .App-info #avatarProfile{                   /****** Foto perfil *****/
+    width: 10px;
   }
   
   .App-body img{                            /** Divs **/
